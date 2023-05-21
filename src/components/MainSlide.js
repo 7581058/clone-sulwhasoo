@@ -7,7 +7,7 @@ export default class MainSlide extends Component {
     this.el.classList.add('main-slide')
     this.el.innerHTML = /* html */ `
       <div class="swiper-wrap"> 
-        <swiper-container class="products-swiper" autoplay="true" loop="true" effect="fade">
+        <swiper-container class="main-swiper" autoplay="true" loop="true" effect="fade">
         </swiper-container>
         <button class="btn-prev"></button>
         <button class="btn-next"></button>
