@@ -27,7 +27,7 @@ export default class ProductsSlide extends Component {
     Store.state.products.map(product => {
       const slide = document.createElement('swiper-slide')
       slide.innerHTML = /* html */ `
-        <div class="img" style="background-image:url('./${product.src}')"></div>
+        <div class="img" style="background-image:url('/${product.src}')"></div>
         <div class="info-wrap">
           <h3>${product.name}</h3>
           <span>${product.des}</span>
@@ -68,10 +68,10 @@ export default class ProductsSlide extends Component {
     buttonPause.addEventListener('click', () => {
       pause = !pause
       if(pause) {
-        buttonPause.style.backgroundImage = 'url("./slide_start.svg")'
+        buttonPause.style.backgroundImage = 'url("/slide_start.svg")'
         swiperEl.swiper.autoplay.stop()
       } else {
-        buttonPause.style.backgroundImage = 'url("./slide_pause.svg")'
+        buttonPause.style.backgroundImage = 'url("/slide_pause.svg")'
         swiperEl.swiper.autoplay.start()
       }
     })

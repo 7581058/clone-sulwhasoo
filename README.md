@@ -9,11 +9,10 @@
 ### :question:주제
 
 ```
-설화수 홈페이지 
+설화수 홈페이지 클론코딩
 
 https://www.sulwhasoo.com/kr/ko/index.html
 
-본 주소의 홈페이지를 클론코딩 합니다. 
 ```
 
 ### 결과물 

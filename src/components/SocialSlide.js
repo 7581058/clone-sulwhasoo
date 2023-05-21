@@ -38,7 +38,7 @@ export default class SocialSlide extends Component {
     Store.state.items.map(item => {
       const slide = document.createElement('swiper-slide')
       slide.innerHTML = /* html */ `
-        <div class="img" style="background-image:url('./with_${item.src}')"></div>
+        <div class="img" style="background-image:url('/with_${item.src}')"></div>
         <div class="icon-wrap">
           <div class="icon"></div>
         </div>

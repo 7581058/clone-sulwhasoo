@@ -26,7 +26,7 @@ export default class MainSlide extends Component {
     Store.state.mains.map(main => {
       const slide = document.createElement('swiper-slide')
       slide.innerHTML = /* html */ `
-        <div class="img" style="background-image:url('./${main.src}')"></div>
+        <div class="img" style="background-image:url('/${main.src}')"></div>
         <div class="info-wrap main-${main.index}">
           <span>${main.des}</span>
           <p>${main.text}</p>
@@ -65,10 +65,10 @@ export default class MainSlide extends Component {
     buttonPause.addEventListener('click', () => {
       pause = !pause
       if(pause) {
-        buttonPause.style.backgroundImage = 'url("./play_white.png")'
+        buttonPause.style.backgroundImage = 'url("/play_white.png")'
         swiperEl.swiper.autoplay.stop()
       } else {
-        buttonPause.style.backgroundImage = 'url("./stop_white.png")'
+        buttonPause.style.backgroundImage = 'url("/stop_white.png")'
         swiperEl.swiper.autoplay.start()
       }
     })
